@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 2px solid blue;
-}
+} */
 
 nav a {
     text-align: center;
@@ -32,6 +32,10 @@ main section {
     text-align: center;
 }
 
+.main class {
+    text_align: center;
+}
+
 #background {
     height: 725px;
     background-color: #D4E0CD;
@@ -58,6 +62,10 @@ header {
 
 .msg {
     background-color: #D4E0CD;
+}
+
+.msg camping-card {
+    text-align: center;
 }
 
 .msg h2 {
