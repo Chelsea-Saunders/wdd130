@@ -1,0 +1,81 @@
+/* body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 300px;
+    max-height: 150px;
+    margin: auto 0;
+    height: 50%;
+    width: 70%;
+    background-color: #7d7f7a;
+    position: relative;
+}
+
+img {
+    grid-column: 1/2;
+    z-index: 0;
+    width: 300px;
+    position: left;
+}
+
+h1 {
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+    text-align: center;
+    font-size: 8vw;
+    color: black;
+    grid-row: 1/2;
+    grid-column: 1/3
+    
+}
+
+p {
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    position: right;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: #d21414;
+} */
+
+.appleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    max-height: 200px;
+    max-width: 400px;
+}
+
+img {
+    grid-column-start: 1;
+    grid-column-end:2;
+    position: left;
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: center;
+    z-index: 1;
+}
+
+.p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: right;
+}
+
+.gray {
+    /* grid: 2/3; */
+    /* position: left; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 200px;
+    height: 200px;
+    background-color: #737373;
+}
