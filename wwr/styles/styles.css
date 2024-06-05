@@ -53,29 +53,33 @@ nav a:hover {
     margin-top: -100px;
 }
 
-.hero-box {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+#hero-box {
+    /* display: grid;
+    grid-template-columns: 1fr 3fr 1fr; */
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
+    /* width: 60%; */
+}
+#hero-box img {
+    width: 100%;
 }
 
-.hero-msg {
+#hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
-.hero-msg h1, #hero-msg h4 {
+#hero-msg h1, #hero-msg h4 {
     text-align: center;
-    width: 100%;
+    /* width: 100%;
     font-family: var(--paragraph-font), "Arial Narrow", sans-serif;
     font-family: var(--heading-font), "Kalam", "EB Garamond";
     --heading-font: "Kalam", "Berkshire Swash";
     --paragraph-font: "Alumni Sans";
-    color: white;
+    color: white;  */
 }
 
 h4 {
@@ -108,7 +112,7 @@ h4 {
 
 .home-title {
     color: #765330;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(10,1fr);
     font-family: var(--paragraph-font), "Arial Narrow", sans-serif;
     font-family: var(--heading-font), "Kalam", "EB Garamond";
