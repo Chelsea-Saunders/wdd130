@@ -1,8 +1,9 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap.berkshire-swash-regular'); 
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Berkshire+Swash&family=Big+Shoulders+Display:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap.berkshire-swash-regular');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Berkshire+Swash&family=Big+Shoulders+Display:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'); 
 
 :root {
   /* change the values below to your colors from your palette */
@@ -13,7 +14,7 @@ Fonts are separated by a & */
   --accent3-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Berkshire Swash";
+  --heading-font: "Kalam";
   --paragraph-font: "Alumni Sans";
 
   /* these colors below should be chosen from among your palette colors above */
