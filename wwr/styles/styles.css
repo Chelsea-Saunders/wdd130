@@ -1,5 +1,5 @@
 
-/* 
+/* Note to self: 
 id = #
 class = .     
 */
@@ -7,7 +7,7 @@ class = .
 
 a:hover {
     background-color: white;
-    color: #468EA4;
+    color: #375723;
 }
 #background {
     height: 725px;
@@ -25,16 +25,16 @@ body {
     --paragraph-font: "Alumni Sans"; */
 }
 .book, .join {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
-    background-color: #375723;
+    background-color: #B3C8A7;
 }
 .book:hover, .join:hover {
-    background-color: #468EA4;
+    background-color: #375723;
     color: white;
     font-size: 18px;
 }
