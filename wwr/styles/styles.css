@@ -20,9 +20,6 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
-    /* font-family: "Arial Narrow"; */
-    /* font-family: var(--paragraph-font), "Arial Narrow", sans-serif;
-    --paragraph-font: "Alumni Sans"; */
 }
 .book, .join {
     color: black;
@@ -42,7 +39,7 @@ body {
     text-align: center;
 }    
 .camping-card {
-    font-family: "Kalam";
+    font-family: "Kalam", "PT Sans";
     margin: 200px 0;
     grid-column: 5/7;
     grid-row: 2/3;
@@ -58,7 +55,7 @@ body {
     transform: scale(1.1);
 }
 #content {
-    font-family: "Arial Narrow";
+    font-family: "Arial Narrow", "Arial";
 }
 footer {
     background-color: #D4E0CD;
@@ -68,7 +65,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Arial Narrow";
+    font-family: "Arial Narrow", "Arial";
 }
 footer a {
     color: black;
@@ -98,8 +95,7 @@ h2 {
     margin: 0;
 }
 header {
-    font-family: "Kalam";
-    
+    font-family: "Kalam", "PT Sans";
     display: grid;
     grid-template-columns: 25% auto;
 }
@@ -130,7 +126,7 @@ header {
    grid-template-columns: repeat(10, 1fr); 
 }
 .home-title {
-    font-family: "Kalam", "Bradley Hand";
+    font-family: "Kalam", "PT Sans";
     font-size: 2em;
     margin-top: 10px;
 }
@@ -167,7 +163,7 @@ main section img {
     box-shadow: 5px 5px 10px #6f7364;
     }
 .msg h2 {
-    font-family: "Kalam";
+    font-family: "Kalam", "PT Sans";
 }
 .msg p {
     font-size: .8em;
@@ -187,20 +183,20 @@ nav a {
     text-align: center;
     color: black;
     text-decoration: none;
-    font-family: "Arial Narrow";
+    font-family: "Arial Narrow", "Arial";
 }
 nav a:hover {
     background-color: #375723;
     color: white;
 }
 .rapids-card {
-    font-family: "Kalam";
+    font-family: "Kalam", "PT Sans";
     margin: 200px 0;
     grid-column: 8/10;
     grid-row: 2/3;
 }
 .rivers-card {
-    font-family: "Kalam";
+    font-family: "Kalam", "PT Sans";
     margin: 200px 0;
     grid-column: 2/4;
     grid-row: 2/3;
