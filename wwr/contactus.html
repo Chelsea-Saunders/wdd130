@@ -1,0 +1,137 @@
+<!-- for == id == # -->
+<!-- Using FOR instead of id: 
+it associates the label with the form control, enabling mouse, trackpad, 
+and touch device users to click on the label to activate the corresponding 
+control, and it also provides an accessible name for screen readers to read 
+out to their users. -->
+
+<!-- To define the default value of an <input> element you have to use the 
+value attribute like this: 
+<input type="text" value="by default this element is filled with this text" />
+-->
+
+<!-- On the other hand, if you want to define a default value for a <textarea>, 
+you put it between the opening and closing tags of the <textarea> element, 
+like this: 
+<textarea>
+by default this element is filled with this text
+</textarea>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="Logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="locations_index.html">Locations</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <div id="feedback">
+                <form action="/my-handling-form-page" 
+                method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <!-- On the <input> element, the most important attribute 
+                            is the type attribute. This attribute is extremely 
+                            important because it defines the way the <input> element 
+                            appears and behaves -->
+                            <!-- we use the value text for the first input — the 
+                            default value for this attribute. It represents a basic 
+                            single-line text field that accepts any kind of text 
+                            input. -->
+                            <input type="text" id="name"
+                            
+                name="user_name" />
+                    </li>
+                    <li></li> 
+                    <label for="mail">Email:</label>
+                    <!-- On the <input> element, the most important attribute 
+                    is the type attribute. This attribute is extremely 
+                    important because it defines the way the <input> element 
+                    appears and behaves -->
+                    <!-- we use the value email, which defines a single-line text 
+                    field that only accepts a well-formed email address. This turns 
+                    a basic text field into a kind of "intelligent" field that will 
+                    perform some validation checks on the data typed by the user. 
+                    It also causes a more appropriate keyboard layout for entering 
+                    email addresses (e.g. with an @ symbol by default) to appear on 
+                    devices with dynamic keyboards, like smartphones. -->
+                    <!-- The <input> tag is a void element, meaning that it doesn't 
+                    need a closing tag -->
+                    <input type="email" id="mail"
+                name="user_email"/>
+                    </li>
+                    <li>
+                        <label for="msg">Message: </label>
+                        <!--  <textarea> is not a void element, meaning it should be 
+                        closed with the proper ending tag. This has an impact on 
+                        a specific feature of forms: the way you define the 
+                        default value. -->
+                        <textarea id="msg" name="user_message">
+                </textarea>
+                    </li>
+                    <!-- The <button> element also accepts a type attribute — this 
+                    accepts one of three values: submit, reset, or button.
+                    A click on a submit button (the default value) sends the form's 
+                    data to the web page defined by the action attribute of the <form>
+                    element -->
+                    <li class="button">
+                        <button type="submit">Submit Form: 
+                        </button>
+                    </li>
+                    </ul>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>Dry Oar &copy; 2024 - Chelsea Saunders</p>
+            <p><a href=site-plan-rafting.html>Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https//facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    <!-- </div> -->
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
