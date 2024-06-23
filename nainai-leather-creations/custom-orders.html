@@ -5,6 +5,18 @@ and touch device users to click on the label to activate the corresponding
 control, and it also provides an accessible name for screen readers to read 
 out to their users. -->
 
+<!-- To define the default value of an <input> element you have to use the 
+value attribute like this: 
+<input type="text" value="by default this element is filled with this text" />
+-->
+
+<!-- On the other hand, if you want to define a default value for a <textarea>, 
+you put it between the opening and closing tags of the <textarea> element, 
+like this: 
+<textarea>
+by default this element is filled with this text
+</textarea>
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,22 +25,34 @@ out to their users. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nai-nai.css">
 </head>
 <body>
     <div id="content">
         <header>
-            <a id="Logo_link" href="index.html">
-                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
-            </a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="locations_index.html">Locations</a>
-                <a href="site-plan-rafting.html">Site Plan</a>
-                <a href="contactus.html">Contact Us</a>
+                <a href="index-nai-nai.html">Home</a>
+                <a href="graphics.html">Graphic Prints</a>
+                <a href="custom-orders.html">Custom Orders</a>
+                <!-- <a href="contactus.html">Contact Us</a> -->
             </nav>
+            <a id="Logo_link" href="index-nai-nai.html">
+                <img class="logo" src="images/imagecompressor/rsz_1logo-min.png" alt="NaiNai Logo" width="280px">
+            </a>
         </header>
         <main>
+            <!-- custom orders parent -->
+            <section class="custom-order-grid">
+                <section class="birkenstock-card">
+                    <img class="card-img" src="images/imagecompressor/rsz_4birkenstocks-min.png" alt="Leather Birkenstocks" height="200px">
+                </section>
+                <section class="hats-card">
+                    <img class="card-img" src="images/imagecompressor/rsz_hats-with-skull-min.png" alt="Hats" width="200px">
+                </section>
+                <section class="shoes-card">
+                    <img class="card-img" src="./images/imagecompressor/rsz_leather-toed-shoes-min.png" alt="Shoes" width="100px">
+                </section>
+            </section>
             <div id="feedback">
                 <form action="/my-handling-form-page" 
                 method="post">
@@ -88,18 +112,17 @@ out to their users. -->
             </div>
         </main>
         <footer>
-            <p>Dry Oar &copy; 2024 - Chelsea Saunders</p>
-            <p><a href=site-plan-rafting.html>Site Plan</a></p>
-            <p><a href="contactus.html">Contact Us</a></p>
+            <p>NaiNai Leather & Creations &copy; 2024 - Chelsea Saunders</p>
+            <p><a href=site-plan.html>Site Plan</a></p>
             <div class="social">
                 <a href="https//facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
+                    <img src="images/facebook copy.png" alt="fb icon">
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
+                    <img src="images/twitter copy.png" alt="twitter icon">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
+                    <img src="images/instagram copy.png" alt="instagram icon">
                 </a>
             </div>
         </footer>

@@ -1,0 +1,180 @@
+
+/* Nav */
+a:hover {
+    background-color: #172625;
+    color: #F0F2F0;
+}
+#content {
+    font-family: "Arial Narrow", "Arial";
+    background-color: #92A6A6;
+}
+header {
+    font-family: "Kalam", "PT Sans";
+    display: grid;
+    grid-template-columns: auto 25%;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+/* .logo {
+    margin-top: 25px;
+    
+} */
+nav {
+    color: #F0F2F0;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Arial Narrow", "Arial";
+    font-size: 1.2em;
+    padding-top: 35px;
+    text-align: right;
+}
+nav a {
+    padding: 35px;
+    height: 15%;
+    color: #172625;
+    text-decoration: none;
+    font-family: "Arial Narrow", "Arial";
+}
+nav a:hover {
+    background-color: #172625;
+    color: #F0F2F0;
+}
+
+/* Footer */
+footer {
+    background-color: #92A6A6;
+    color: #F0F2F0;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Arial Narrow", "Arial";
+}
+footer a {
+    color: #172625;
+    text-decoration: none;
+}
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+    font-family: "Arial Narrow";
+}
+footer p a:hover {
+    text-decoration: underline;
+    background-color: #172625;
+    color: #F0F2F0;
+}
+footer .social img {
+    padding-top: 15px;
+}
+/* 3 custom order images */
+.custom-order-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+ }
+ .birkenstock-card {
+    margin: 200px 0;
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+.card-img {
+    border: 10px solid #F0F2F0;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.hats-card {
+    margin: 200px 0;
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.shoes-card {
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+/* Contact Us Page */
+body {
+    /* center the form on the page */
+    text-align: center;
+}
+form {
+    display: inline-block;
+    /* From Outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* form li + li {
+    margin-top: 1em;
+} */
+label {
+    /* uniform size and alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+    margin-top: 1.5em;
+}
+input
+textarea {
+      /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+    font: 1em arial, sans-serif;
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    /* Provide space to type some text */
+    height: 15em;
+    margin-top: 1.5em;
+}
+.button {
+    /* Align buttons with the text fields */
+    /* same size as the label elements */
+    padding-left: 90px; 
+}
+button {
+    /* This extra margin represent roughly the same space as the space
+    between the labels and their text fields */
+    margin-left: 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+    #feedback {
+        background-color: antiquewhite;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: .5em;
+        /* make this element invisible until we are ready for it */
+        display: none;      
+        }
+        .moveDown {
+            margin-top: 3em;
+        }
+}
