@@ -1,32 +1,112 @@
+<!-- for == id == # -->
+<!-- Using FOR instead of id: 
+it associates the label with the form control, enabling mouse, trackpad, 
+and touch device users to click on the label to activate the corresponding 
+control, and it also provides an accessible name for screen readers to read 
+out to their users. -->
+
+<!-- To define the default value of an <input> element you have to use the 
+value attribute like this: 
+<input type="text" value="by default this element is filled with this text" />
+-->
+
+<!-- On the other hand, if you want to define a default value for a <textarea>, 
+you put it between the opening and closing tags of the <textarea> element, 
+like this: 
+<textarea>
+by default this element is filled with this text
+</textarea>
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="#">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/nai-nai.css">
 </head>
 <body>
     <div id="content">
         <header>
-            <a id="" href="#">
-                <img class="logo" src="images/imagecompressor/rsz_1logo-min.png" alt="Dry Oar Logo">
-            </a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="#">Graphics</a>
-                <a href="#">Custom Orders</a>
+                <a href="index-nai-nai.html">Home</a>
+                <a href="graphics.html">Graphic Prints</a>
+                <a href="custom-orders.html">Custom Orders</a>
+                <!-- <a href="contactus.html">Contact Us</a> -->
             </nav>
+            <a id="Logo_link" href="index-nai-nai.html">
+                <img class="logo" src="images/imagecompressor/rsz_1logo-min.png" alt="NaiNai Logo" width="280px">
+            </a>
         </header>
-        <div id="">
-            <div id=""> 
-                <img id="img" src="" alt="">
-                </div>
-                <section id="banner-msg">
-                    <h1>Pick from Three Amazing Locations</h1>
+        <main class="main">
+            <section class="page-title">
+                <h1 class="title-msg">Pre-Made Products</h1>
+                <p>Here at NaiNai Leather & Creations, we offer unprecedented and 
+                    hand-crafted leatherwork and custom graphic designs. Have you 
+                    ever gone to a craft show and been drawn into the beautiful 
+                    leather, hand-made items? They all claimed to be hand crafted 
+                    and unique. But have you ever picked up a piece and look it 
+                    over and thought, "No doubt it was beautiful but it was 
+                    obvious to even an untrained eye that this is most definitely 
+                    NOT hand crafted"? Well, perhaps the staining or painting was 
+                    authentic but the actual leatherwork wasn't. Then, you flipped 
+                    the tag over and had to pick your jaw up off the floor, seeing 
+                    the astronomical prices? Yes, the piece was real leather but 
+                    the bragged about handtooling wasn't and they were pricing it 
+                    as if it were. Knowing what life’s like on a farm, and 
+                    understanding the reality of having to scrimp for good quality 
+                    stuff but also knowing how important it is to have good, 
+                    long-lasting quality, and having been raised around leather 
+                    work but never had time to get into it seriously, got me 
+                    thinking, I wonder if I could make high-quality, hand-crafted 
+                    items for a reasonable price. After a few years of practicing, 
+                    people started noticing the quality and uniqueness and wanted 
+                    me to make stuff for them and NaiNai Leather & Creations was 
+                    born. The love making a genuine product that are strikingly 
+                    beautiful, with unmatched designs all while keeping it at a 
+                    price that the honest hard-working American can afford.</p>
+            </section>
+            <!-- pre-made parent -->
+            <section class="pre-made-grid">
+                <section class="hair-clip-card">
+                    <img class="clip-img" src="images/imagecompressor/rsz_2hair-clip-rotated-min.png" alt="Hair Clip" width="300px">
+                    <h2>Hair Clip</h2>
+                    <li class="button">
+                        <button type="submit">Add to Cart</button>
+                    </li>
                 </section>
+                <section class="belt-attachment-card">
+                    <img class="belt-attachment-img" src="images/imagecompressor/rsz_1belt-attachment-rotated-min.png" alt="belt-attachment" width="300px">
+                    <h2>Belt Attachment</h2>
+                    <li class="button">
+                        <button type="submit">Add to Cart</button>
+                    </li>
+                </section>
+                <section class="bill-fold-card">
+                    <img class="bill-fold-img" src="images/imagecompressor/rsz_2bill-fold-min.png" alt="Bill Fold" width="300px">
+                    <h2>Bill Fold</h2>
+                    <li class="button">
+                        <button type="submit">Add to Cart</button>
+                    </li>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>NaiNai Leather & Creations &copy; 2024 - Chelsea Saunders</p>
+            <p><a href=site-plan.html>Site Plan</a></p>
+            <div class="social">
+                <a href="https//facebook.com" target="_blank">
+                    <img src="images/facebook copy.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter copy.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram copy.png" alt="instagram icon">
+                </a>
             </div>
-        </div>
+        </footer>
 </body>
 </html>
