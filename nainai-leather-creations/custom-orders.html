@@ -37,7 +37,7 @@ by default this element is filled with this text
                 <!-- <a href="contactus.html">Contact Us</a> -->
             </nav>
             <a id="Logo_link" href="index-nai-nai.html">
-                <img class="logo" src="images/imagecompressor/rsz_1logo-min.png" alt="NaiNai Logo" width="280px">
+                <img class="logo" src="images/imagecompressor/rsz_1logo-min.png" alt="NaiNai Logo">
             </a>
         </header>
         <main>
@@ -63,11 +63,22 @@ by default this element is filled with this text
                 </section>
             </section>
             <div id="feedback">
-                <form action="/my-handling-form-page" 
-                method="post">
-                    <ul>
-                        <li>
-                            <label for="name">Name:</label>
+                <form action="/my-handling-form-page">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="user_email"><br><br>
+                    <label for="msg">Message/Description</label>
+                    <input type="textarea" id="msg" name="user-msg"><br><br>
+                    <input type="submit" value="Submit Custom">
+                    <!-- <a class="button">
+                        <button type="submit">Submit Custom Order</button>
+                    </a> -->
+                </form> 
+                <!-- method="post"> -->
+                    <!-- <ul> -->
+                        <!-- <li> -->
+                            <!-- <label for="name">Name:</label> -->
                             <!-- On the <input> element, the most important attribute 
                             is the type attribute. This attribute is extremely 
                             important because it defines the way the <input> element 
@@ -76,64 +87,58 @@ by default this element is filled with this text
                             default value for this attribute. It represents a basic 
                             single-line text field that accepts any kind of text 
                             input. -->
-                            <input type="text" id="name"
+                            <!-- <input type="text" id="name" -->
                             
-                name="user_name" />
-                    </li>
-                    <li></li> 
-                    <label for="mail">Email:</label>
-                    <!-- On the <input> element, the most important attribute 
-                    is the type attribute. This attribute is extremely 
-                    important because it defines the way the <input> element 
-                    appears and behaves -->
-                    <!-- we use the value email, which defines a single-line text 
-                    field that only accepts a well-formed email address. This turns 
-                    a basic text field into a kind of "intelligent" field that will 
-                    perform some validation checks on the data typed by the user. 
-                    It also causes a more appropriate keyboard layout for entering 
-                    email addresses (e.g. with an @ symbol by default) to appear on 
-                    devices with dynamic keyboards, like smartphones. -->
-                    <!-- The <input> tag is a void element, meaning that it doesn't 
-                    need a closing tag -->
-                    <input type="email" id="mail"
-                name="user_email"/>
-                    </li>
-                    <li>
-                        <label for="msg">Message/Description: </label>
-                        <!--  <textarea> is not a void element, meaning it should be 
-                        closed with the proper ending tag. This has an impact on 
-                        a specific feature of forms: the way you define the 
-                        default value. -->
-                        <textarea id="msg" name="user_message">
-                </textarea>
-                    </li>
-                    <!-- The <button> element also accepts a type attribute — this 
-                    accepts one of three values: submit, reset, or button.
-                    A click on a submit button (the default value) sends the form's 
-                    data to the web page defined by the action attribute of the <form>
-                    element -->
-                    <li class="button">
-                        <button type="submit">Submit Custom Order: 
-                        </button>
-                    </li>
-                    </ul>
-                </form>
+                            <!-- name="user_name" /> -->
+                                <!-- </li> -->
+                                <!-- <li></li>  -->
+                                <!-- <label for="mail">Email:</label> -->
+                                <!-- On the <input> element, the most important attribute 
+                                is the type attribute. This attribute is extremely 
+                                important because it defines the way the <input> element 
+                                appears and behaves -->
+                                <!-- we use the value email, which defines a single-line text 
+                                field that only accepts a well-formed email address. This turns 
+                                a basic text field into a kind of "intelligent" field that will 
+                                perform some validation checks on the data typed by the user. 
+                                It also causes a more appropriate keyboard layout for entering 
+                                email addresses (e.g. with an @ symbol by default) to appear on 
+                                devices with dynamic keyboards, like smartphones. -->
+                                <!-- The <input> tag is a void element, meaning that it doesn't 
+                                need a closing tag -->
+                                <!-- <input type="email" id="mail" -->
+                            <!-- name="user_email"/> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                    <!-- <label for="msg">Message/Description: </label> -->
+                                    <!--  <textarea> is not a void element, meaning it should be 
+                                    closed with the proper ending tag. This has an impact on 
+                                    a specific feature of forms: the way you define the 
+                                    default value. -->
+                                    <!-- <textarea id="msg" name="user_message"> -->
+                            <!-- </textarea> -->
+                                <!-- </li> -->
+                                <!-- The <button> element also accepts a type attribute — this 
+                                accepts one of three values: submit, reset, or button.
+                                A click on a submit button (the default value) sends the form's 
+                                data to the web page defined by the action attribute of the <form>
+                                element -->
+                                <!-- <a class="button"> -->
+                                    <!-- <button type="submit">Submit Custom Order:  -->
+                                    <!-- </button> -->
+                                <!-- </a> -->
+                    <!-- </ul> -->
+                <!-- </form> -->
             </div>
         </main>
         <footer>
-            <p>NaiNai Leather & Creations &copy; 2024 - Chelsea Saunders</p>
-            <p><a href=site-plan.html>Site Plan</a></p>
             <div class="social">
-                <a href="https//facebook.com" target="_blank">
-                    <img src="images/facebook copy.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter copy.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram copy.png" alt="instagram icon">
-                </a>
+                <a href="https://www.instagram.com/nainaiphotoandleather/?igsh=cGdkMXZtMGlsaTh6" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
             </div>
+            <p><a href=site-plan.html>Site Plan</a></p>
+            <p>NaiNai Leather & Creations &copy; 2024 - Chelsea Saunders</p>
+                </a>
         </footer>
     <!-- </div> -->
     <script>

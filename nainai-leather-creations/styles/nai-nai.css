@@ -20,6 +20,7 @@ header {
 }
 .logo {
     border: 5px solid white;
+    width: 280px;
 }
 nav {
     color: #F0F2F0;
@@ -47,7 +48,7 @@ footer {
     background-color: #92A6A6;
     color: #F0F2F0;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -69,6 +70,9 @@ footer p a:hover {
 }
 footer .social img {
     padding-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 /* 3 custom order images */
 .custom-order-grid {
@@ -107,7 +111,17 @@ footer .social img {
     grid-row: 2/3;
 }
 
+/* Graphics Page */
+.tie-img {
+    max-width: 300px;
+}
+.onsie-img {
+    max-width: 300px;
+}
+
 /* Main Products Page */
+
+
 /* .main {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -116,6 +130,15 @@ p {
     margin-top: 50px;
     font-size: 20px;
     padding: 30px;
+}
+.clip-img {
+    width: 300px;
+}
+.phone-holster-img {
+    width: 300px;
+}
+.bill-fold-img {
+    width: 300px;
 }
 
 /* Contact Us Page */
