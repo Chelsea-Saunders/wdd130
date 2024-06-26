@@ -51,34 +51,23 @@ by default this element is filled with this text
                 sure you get exactly what you want. Satisfaction guarenteed.</p>
             </section>
             <!-- custom orders parent -->
-            <section class="custom-order-grid">
+            <div class="custom-order-grid">
                 <section class="birkenstock-card">
-                    <img class="card-img" src="images/imagecompressor/rsz_4birkenstocks-min.png" alt="Leather Birkenstocks" height="200px">
+                    <img class="card-img" src="images/imagecompressor/rsz_4birkenstocks-min.png" alt="Leather Birkenstocks">
                 </section>
                 <section class="hats-card">
-                    <img class="card-img" src="images/imagecompressor/rsz_hats-with-skull-min.png" alt="Hats" width="200px">
+                    <img class="card-img" src="images/imagecompressor/rsz_hats-with-skull-min.png" alt="Hats">
                 </section>
                 <section class="shoes-card">
-                    <img class="card-img" src="./images/imagecompressor/rsz_leather-toed-shoes-min.png" alt="Shoes" width="100px">
+                    <img class="card-img" src="./images/imagecompressor/rsz_leather-toed-shoes-min.png" alt="Shoes">
                 </section>
-            </section>
-            <div id="feedback">
-                <form action="/my-handling-form-page">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="user_email"><br><br>
-                    <label for="msg">Message/Description</label>
-                    <input type="textarea" id="msg" name="user-msg"><br><br>
-                    <input type="submit" value="Submit Custom">
-                    <!-- <a class="button">
-                        <button type="submit">Submit Custom Order</button>
-                    </a> -->
-                </form> 
-                <!-- method="post"> -->
-                    <!-- <ul> -->
-                        <!-- <li> -->
-                            <!-- <label for="name">Name:</label> -->
+            </div>
+            <div class="feedback">
+                <form action="/my-handling-form-page" 
+                method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
                             <!-- On the <input> element, the most important attribute 
                             is the type attribute. This attribute is extremely 
                             important because it defines the way the <input> element 
@@ -87,48 +76,44 @@ by default this element is filled with this text
                             default value for this attribute. It represents a basic 
                             single-line text field that accepts any kind of text 
                             input. -->
-                            <!-- <input type="text" id="name" -->
+                            <input type="text" id="name"
                             
-                            <!-- name="user_name" /> -->
-                                <!-- </li> -->
-                                <!-- <li></li>  -->
-                                <!-- <label for="mail">Email:</label> -->
-                                <!-- On the <input> element, the most important attribute 
-                                is the type attribute. This attribute is extremely 
-                                important because it defines the way the <input> element 
-                                appears and behaves -->
-                                <!-- we use the value email, which defines a single-line text 
-                                field that only accepts a well-formed email address. This turns 
-                                a basic text field into a kind of "intelligent" field that will 
-                                perform some validation checks on the data typed by the user. 
-                                It also causes a more appropriate keyboard layout for entering 
-                                email addresses (e.g. with an @ symbol by default) to appear on 
-                                devices with dynamic keyboards, like smartphones. -->
-                                <!-- The <input> tag is a void element, meaning that it doesn't 
-                                need a closing tag -->
-                                <!-- <input type="email" id="mail" -->
-                            <!-- name="user_email"/> -->
-                                <!-- </li> -->
-                                <!-- <li> -->
-                                    <!-- <label for="msg">Message/Description: </label> -->
-                                    <!--  <textarea> is not a void element, meaning it should be 
-                                    closed with the proper ending tag. This has an impact on 
-                                    a specific feature of forms: the way you define the 
-                                    default value. -->
-                                    <!-- <textarea id="msg" name="user_message"> -->
-                            <!-- </textarea> -->
-                                <!-- </li> -->
-                                <!-- The <button> element also accepts a type attribute — this 
-                                accepts one of three values: submit, reset, or button.
-                                A click on a submit button (the default value) sends the form's 
-                                data to the web page defined by the action attribute of the <form>
-                                element -->
-                                <!-- <a class="button"> -->
-                                    <!-- <button type="submit">Submit Custom Order:  -->
-                                    <!-- </button> -->
-                                <!-- </a> -->
-                    <!-- </ul> -->
-                <!-- </form> -->
+                name="user_name" />
+                    <li> 
+                    <label for="mail">Email:</label>
+                    <!-- On the <input> element, the most important attribute 
+                    is the type attribute. This attribute is extremely 
+                    important because it defines the way the <input> element 
+                    appears and behaves -->
+                    <!-- we use the value email, which defines a single-line text 
+                    field that only accepts a well-formed email address. This turns 
+                    a basic text field into a kind of "intelligent" field that will 
+                    perform some validation checks on the data typed by the user. 
+                    It also causes a more appropriate keyboard layout for entering 
+                    email addresses (e.g. with an @ symbol by default) to appear on 
+                    devices with dynamic keyboards, like smartphones. -->
+                    <!-- The <input> tag is a void element, meaning that it doesn't 
+                    need a closing tag -->
+                    <input type="email" id="mail"
+                name="user_email"/>
+                    <li>
+                        <label for="msg">Description: </label>
+                        <!--  <textarea> is not a void element, meaning it should be 
+                        closed with the proper ending tag. This has an impact on 
+                        a specific feature of forms: the way you define the 
+                        default value. -->
+                        <textarea id="msg" name="user_message">
+                </textarea>
+                    <!-- The <button> element also accepts a type attribute — this 
+                    accepts one of three values: submit, reset, or button.
+                    A click on a submit button (the default value) sends the form's 
+                    data to the web page defined by the action attribute of the <form>
+                    element -->
+                    <li class="button">
+                        <button type="submit">Submit Form: 
+                        </button>
+                    </ul>
+                </form>
             </div>
         </main>
         <footer>
