@@ -376,11 +376,11 @@ h2 {
 }
 
 
-
-
-
-
 /* Contact Us Page */
+#feedback h1 {
+    color:#375723;
+    font-family: "Kalam", "PT Sans";
+}
 body {
     /* center the form on the page */
     text-align: center;
