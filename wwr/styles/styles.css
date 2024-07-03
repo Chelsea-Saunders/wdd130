@@ -239,7 +239,9 @@ h2 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
-
+#banner-msg h1 {
+    font-family: "Kalam", "PT Sans";
+}
 #salmon-container {
     margin: 100px 0;
     margin-top: 250px;
@@ -278,9 +280,14 @@ h2 {
     padding-bottom: 15px;
     height: 40%;
 }
+.salmon-msg h2 {
+    font-family: "Kalam", "PT Sans";
+}
 
 /* Desolation Card */
-
+.desolation-msg h2 {
+    font-family: "Kalam", "PT Sans";
+}
 #desolation-container {
     margin:100px 0;
     display: grid;
@@ -325,6 +332,9 @@ h2 {
 
 /* Grand Canyon Card */
 
+.grand-canyon-msg h2 {
+    font-family: "Kalam", "PT Sans";
+}
 #grand-canyon-container {
     margin: 100px 0;
     display: grid;
