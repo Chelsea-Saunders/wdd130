@@ -10,6 +10,7 @@ a:hover {
 #content {
     font-family: "Antonio", "Arial";
     background-color: #92A6A6;
+    width: 100%;
 }
 header {
     font-family: "Antonio", "PT Sans";
@@ -38,6 +39,7 @@ nav {
 }
 nav a {
     padding: 35px;
+    padding-top: 18px;
     height: 15%;
     color: #172625;
     text-decoration: none;
@@ -60,6 +62,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     font-family: "Antonio", "Arial";
+    max-width: 900px;
 }
 footer a {
     color: #172625;
@@ -90,7 +93,7 @@ footer .social img {
  }
  .birkenstock-card {
     margin: 200px 0;
-    margin-top: 75px;
+    margin-top: 100px;
     margin-bottom: 100px;
     grid-column: 2/4;
     grid-row: 2/4;
@@ -111,7 +114,7 @@ footer .social img {
 }
 .hats-card {
     margin: 200px 0;
-    margin-top: 75px;
+    margin-top: 140px;
     margin-bottom: 100px;
     grid-column: 5/7;
     grid-row: 2/3;
@@ -244,6 +247,7 @@ form {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+    margin-top: 50px;
 }
 ul {
     list-style: none;
