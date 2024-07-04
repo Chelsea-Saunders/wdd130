@@ -48,6 +48,7 @@ nav a {
     font-family: "Antonio", "Arial";
     transition: transform .5s;
     box-shadow: 10px 10px 10px #6f7364;
+    border: 1px solid white;
 }
 nav a:hover {
     background-color: #172625;
@@ -425,15 +426,16 @@ button {
     /* z-index: 0; */
   }
   .add-to-cart-button:hover, .add-to-cart-button:focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(252, 186, 3, .45);
-    box-shadow: 0 0 0 0.2rem rgba(252, 186, 3, .45);
+    -webkit-box-shadow: 0 0 0 0.2rem white;
+    box-shadow: 0 0 0 0.2rem white;
     -webkit-transform: translateY(-1px);
     transform: translateY(-1px);
   }
   .add-to-cart-button.added {
-    background: #2fbf30;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(11, 252, 3, 0.45);
-    box-shadow: 0 0 0 0.2rem rgba(11, 252, 3, 0.45);
+    background: white;
+    color: #73494F;
+    -webkit-box-shadow: 0 0 0 0.2rem white;
+    box-shadow: 0 0 0 0.2rem white;
   }
   .add-to-cart-button.added .add-to-cart {
     display: none;
