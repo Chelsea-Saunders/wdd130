@@ -213,7 +213,8 @@ p {
     margin-top: 50px;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
-
+/* used this website to learn how to build the "enlarge as you hover" effect:display:
+https://dev.to/cwrcode/create-add-to-cart-button-using-html-css-javascript-3glc */
     top:-50px; 
     left:-35px; 
     display:block; 
