@@ -30,15 +30,43 @@ by default this element is filled with this text
 <body>
     <div id="content">
         <header>
+            <a id="Logo_link" href="index-nai-nai.html">
+                <img class="logo" src="images/imagecompressor/rsz_1logo-min.png" alt="NaiNai Logo">
+            </a>
             <nav>
                 <a href="index-nai-nai.html">Home</a>
                 <a href="graphics.html">Graphic Prints</a>
                 <a href="custom-orders.html">Custom Orders</a>
-                <!-- <a href="contactus.html">Contact Us</a> -->
-            </nav>
-            <a id="Logo_link" href="index-nai-nai.html">
-                <img class="logo" src="images/imagecompressor/rsz_1logo-min.png" alt="NaiNai Logo">
-            </a>
+                <!-- Button to open the modal login form -->
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                <!-- The Modal -->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+
+                    <!-- Modal Content -->
+                    <form class="modal-content animate" action="/action_page.php">
+
+                        <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw"><a href="#">Forgot Password?</a></span>
+                        </div>
+                    </form>
+                </div>
         </header>
         <main class="main">
             <section class="page-title">
@@ -77,6 +105,14 @@ by default this element is filled with this text
                     <button type="submit">
                         <a id="button">Add to Cart</a>
                     </button>
+                </section>
+                <section class="onsie-card">
+                    <img class="onsie-img" src="images/imagecompressor/rsz_onsie.png" alt="Onsie with Custom Graphics" width="300px">
+                    <h2>Onsie with Custom Graphics</h2>
+                    <button type="submit">
+                        <a id="button">Add to Cart</a>
+                    </button>
+                </section>
             </div>
         </main>
         <footer>

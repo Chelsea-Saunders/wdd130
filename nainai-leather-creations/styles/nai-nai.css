@@ -17,7 +17,7 @@ a:hover {
 header {
     font-family: "Antonio", "PT Sans";
     display: grid;
-    grid-template-columns: auto 25%;
+    grid-template-columns: 25% auto;
 }
 #logo_link {
     padding-top: 5px;
@@ -37,11 +37,10 @@ nav {
     font-family: "Antonio", "Arial";
     font-size: 1.2em;
     padding-top: 35px;
-    text-align: right;
 }
 nav a {
-    padding: 35px;
-    padding-top: 18px;
+    padding: 25px;
+    padding-top: 10px;
     height: 15%;
     color: #172625;
     text-decoration: none;
@@ -49,10 +48,137 @@ nav a {
     transition: transform .5s;
     box-shadow: 10px 10px 10px #6f7364;
     border: 1px solid white;
+    background-color: #92A6A6;
 }
 nav a:hover {
     background-color: #172625;
     color: #F0F2F0;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #6f7364; /* Fallback color */
+    background-color: #6f7364; /* Black w/ opacity */
+    padding-top: 60px;
+    font-size: 1em;
+}
+/* Login Button */
+button {
+    padding: 25px;
+    padding-top: 10px;
+    height: 50%;
+    color: #172625;
+    text-decoration: none;
+    font-family: "Antonio", "Arial";
+    transition: transform .5s;
+    box-shadow: 10px 10px 10px #6f7364;
+    border: 1px solid white;
+    background-color: #92A6A6;
+    justify-content: space-around;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #73494F;
+    color: #F0F2F0;
+}
+.container input {
+    margin-top: 40px;
+}
+/* Submit button */
+button.submit {
+    background-color: #92A6A6;
+    box-shadow: none;
+    font-size: 1em;
+    margin-top: 20px;
+    border: 1px solid black;
+    height: 75%;
+}
+button.submit:hover {
+    background-color: #73494F;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #F0F2F0;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+/* Password container */
+.psw-container {
+    font-size: 12px;
+    margin-left: 50px;
+    margin-top: 50px;
+}   
+.psw-container a {
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 12px;
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+.psw-container a:hover {
+    background-color: #73494F;
+}
+.cancelbtn {
+    justify-content: left;
+    background-color: #92A6A6;
+    box-shadow: none;
+    font-size: 2em;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+
+/* User Name label */
+.container {
+    margin: 25px;
+}
+div .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #172625;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+    .close:hover,
+    .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+.animate {
+    color: #172625;
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)}
+to {transform: scale(1)}
 }
 
 
@@ -144,6 +270,63 @@ footer .social img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
 
 
 
@@ -160,7 +343,16 @@ p {
     padding: 30px;
     padding-top: 0;
 }
-
+button.add-to-cart-button {
+    border: 1px solid white;
+}
+div.container {
+    padding: 0;
+    margin: 0;
+}
+span.add-to-cart {
+    padding: 0;
+}
 .pre-made-grid {
     display: grid;
     grid-template-columns: repeat(21, 1fr);
@@ -190,6 +382,7 @@ p {
 /*change the number below to scale to the appropriate size*/ 
 .hair-clip-img:hover { 
     transform: scale(2.5); 
+    z-index: 999;
 }
 .hair-clip-card h2 {
     margin-bottom: 30px;
@@ -226,6 +419,7 @@ https://dev.to/cwrcode/create-add-to-cart-button-using-html-css-javascript-3glc 
 /*change the number below to scale to the appropriate size*/ 
 .phone-holster-img:hover { 
     transform: scale(2.5); 
+    z-index: 999;
 }
 .phone-holster-card h2 {
     margin-bottom: 30px;
@@ -264,6 +458,7 @@ https://dev.to/cwrcode/create-add-to-cart-button-using-html-css-javascript-3glc 
 /*change the number below to scale to the appropriate size*/ 
 .bill-fold-img:hover { 
     transform: scale(2.5); 
+    z-index: 999;
 }
 .bill-fold-card h2 {
     margin-bottom: 5px;
@@ -275,7 +470,7 @@ https://dev.to/cwrcode/create-add-to-cart-button-using-html-css-javascript-3glc 
 
 
 
-/* Contact Us Page */
+/* Custom Order Page */
 
 .page-title {
     font-family:"Roboto", "Arial";
@@ -341,7 +536,7 @@ button {
     margin-left: 0.5em;
 }
 /* 3 custom order images */
-.custom-order-grid {
+/* .custom-order-grid {
     display: grid;
     grid-template-columns: repeat(20, 1fr); 
  }
@@ -383,8 +578,93 @@ button {
     grid-row: 2/3;
     max-width: 200px;
     font-family: "Roboto", "Arial";
-}
-
+} */
+/* * {
+    box-sizing: border-box;
+  } */
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
 
 
