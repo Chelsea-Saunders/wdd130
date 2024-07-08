@@ -42,30 +42,30 @@ by default this element is filled with this text
 
                 <!-- The Modal -->
                 <div id="id01" class="modal">
-                    <span onclick="document.getElementById('id01').style.display='none'"
-                    class="close" title="Close Modal">&times;</span>
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
 
-                    <!-- Modal Content -->
-                    <form class="modal-content animate" action="/action_page.php">
-
-                        <div class="container">
+                <!-- Modal Content -->
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="container">
                         <label for="uname"><b>Username</b></label>
                         <input type="text" placeholder="Enter Username" name="uname" required>
 
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
 
-                        <button type="submit">Login</button>
+                        <button type="submit" class="submit">Submit</button>
                         <label>
                             <input type="checkbox" checked="checked" name="remember"> Remember me
                         </label>
                         </div>
 
-                        <div class="container" style="background-color:#f1f1f1">
+                        <div class="psw-container" style="background-color: transparent">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                        <span class="psw"><a href="#">Forgot Password?</a></span>
-                        </div>
-                    </form>
+                        <span class="psw-container">Forgot <a href="psw-container">password?</a></span>
+                        <script src="index.js"></script>
+                    </div>
+                </form>
                 </div>
         </header>
         <main class="main">
@@ -90,30 +90,37 @@ by default this element is filled with this text
                 to shop. NaiNai’s takes custom orders on just about anything 
                 and gives you your money’s worth and then some.</p>
             </section>
+
+            <!-- <div class="scroll-container">
+                <img src="images/imagecompressor/brown-saddle-tie-min.png" class="tie" alt="Saddle Tie">
+                <img src="images/imagecompressor/rsz_onsie.png" class="onsie" alt="Onsie">
+                <img src="images/imagecompressor/rsz_1graphics_phone_case.png" class="phone-case" alt="Phone Case">
+              </div> -->
+
             <!-- parent for grid -->
-            <div class="graphics-grid">
+            <!-- <div class="graphics-grid">
                 <section class="tie-card">
-                    <img class="tie-img" src="images/imagecompressor/brown-saddle-tie-min.png" alt="Tie with custom graphics" width="300px">
+                    <img class="tie-img" src="images/imagecompressor/brown-saddle-tie-min.png" alt="Tie with custom graphics">
                     <h2>Tie with Custom Graphics</h2>
                     <button type="submit">
                         <a id="button">Add to Cart</a>
                     </button>
                 </section>
                 <section class="onsie-card">
-                    <img class="onsie-img" src="images/imagecompressor/rsz_onsie.png" alt="Onsie with Custom Graphics" width="300px">
+                    <img class="onsie-img" src="images/imagecompressor/rsz_onsie.png" alt="Onsie with Custom Graphics">
                     <h2>Onsie with Custom Graphics</h2>
                     <button type="submit">
                         <a id="button">Add to Cart</a>
                     </button>
                 </section>
-                <section class="onsie-card">
-                    <img class="onsie-img" src="images/imagecompressor/rsz_onsie.png" alt="Onsie with Custom Graphics" width="300px">
+                <section class="phone-case-card">
+                    <img class="phone-case-img" src="images/imagecompressor/rsz_1graphics_phone_case.png" alt="Phone Case with Custom Graphics">
                     <h2>Onsie with Custom Graphics</h2>
                     <button type="submit">
                         <a id="button">Add to Cart</a>
                     </button>
                 </section>
-            </div>
+            </div> -->
         </main>
         <footer>
             <div class="social">
