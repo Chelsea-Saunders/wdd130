@@ -91,36 +91,52 @@ by default this element is filled with this text
                 and gives you your money’s worth and then some.</p>
             </section>
 
-            <!-- <div class="scroll-container">
-                <img src="images/imagecompressor/brown-saddle-tie-min.png" class="tie" alt="Saddle Tie">
-                <img src="images/imagecompressor/rsz_onsie.png" class="onsie" alt="Onsie">
-                <img src="images/imagecompressor/rsz_1graphics_phone_case.png" class="phone-case" alt="Phone Case">
-              </div> -->
-
-            <!-- parent for grid -->
-            <!-- <div class="graphics-grid">
-                <section class="tie-card">
-                    <img class="tie-img" src="images/imagecompressor/brown-saddle-tie-min.png" alt="Tie with custom graphics">
-                    <h2>Tie with Custom Graphics</h2>
-                    <button type="submit">
-                        <a id="button">Add to Cart</a>
-                    </button>
-                </section>
-                <section class="onsie-card">
-                    <img class="onsie-img" src="images/imagecompressor/rsz_onsie.png" alt="Onsie with Custom Graphics">
-                    <h2>Onsie with Custom Graphics</h2>
-                    <button type="submit">
-                        <a id="button">Add to Cart</a>
-                    </button>
-                </section>
-                <section class="phone-case-card">
-                    <img class="phone-case-img" src="images/imagecompressor/rsz_1graphics_phone_case.png" alt="Phone Case with Custom Graphics">
-                    <h2>Onsie with Custom Graphics</h2>
-                    <button type="submit">
-                        <a id="button">Add to Cart</a>
-                    </button>
-                </section>
-            </div> -->
+            <div class="row">
+                <div class="tie">
+                    <img src="images/imagecompressor/brown-saddle-tie-min.png" alt="Tie" style="width:100%">
+                    <style>
+                        img:hover {
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
+                        }
+                        </style>
+                    <button type="submit" class="graphics-cart-button">Add to Cart</button>
+                    </style>
+                </div>
+                <div class="graphic-phone-case">
+                  <img src="images/imagecompressor/rsz_1graphics_phone_case.png" alt="Phone Case" style="width:100%">
+                  <style>
+                    img:hover {
+                      -webkit-transform: scaleX(-1);
+                      transform: scaleX(-1);
+                    }
+                    </style>
+                  <button type="submit" class="graphics-cart-button">Add to Cart</button>
+                </div>
+                <div class="onsie">
+                  <img src="images/imagecompressor/rsz_onsie.png" alt="Onsie" style="width:100%">
+                  <style>
+                    img:hover {
+                      -webkit-transform: scaleX(-1);
+                      transform: scaleX(-1);
+                    }
+                    </style>
+                  <button type="submit" class="graphics-cart-button">Add to Cart</button>
+                  <script>
+                    //Java for add to cart button on home page
+                        addToCartButton = document.querySelectorAll(".graphics-cart-button");
+                        
+                        document.querySelectorAll('.graphics-cart-button').forEach(function(addToCartButton) {
+                            addToCartButton.addEventListener('click', function() {
+                                addToCartButton.classList.add('added');
+                                setTimeout(function(){
+                                    addToCartButton.classList.remove('added');
+                                }, 2000);
+                            });
+                        });
+                        </script>
+                </div>
+              </div>
         </main>
         <footer>
             <div class="social">

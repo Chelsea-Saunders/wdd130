@@ -122,7 +122,19 @@
                              <span class="add-to-cart">Add to cart</span>
                              <span class="added-to-cart">Added to cart</span>
                          </button>
-                    <script src="index.js"></script>
+                    <script>
+                    //Java for add to cart button on home page
+                        addToCartButton = document.querySelectorAll(".add-to-cart-button");
+                        
+                        document.querySelectorAll('.add-to-cart-button').forEach(function(addToCartButton) {
+                            addToCartButton.addEventListener('click', function() {
+                                addToCartButton.classList.add('added');
+                                setTimeout(function(){
+                                    addToCartButton.classList.remove('added');
+                                }, 2000);
+                            });
+                        });
+                        </script>
                     </div>
                 </section>
             </div>
@@ -141,6 +153,7 @@
     </div>
 </body>
 </html>
+
 
 
 <!-- for == id == # -->
