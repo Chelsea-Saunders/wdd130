@@ -267,10 +267,10 @@ footer .social img {
 .tie img, .graphic-phone-case img, .onsie img {
   box-shadow: 5px 5px 10px #6f7364;
   margin-bottom: 10px;
-  img:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
+}
+.tie img:hover, .graphic-phone-case img:hover, .onsie img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .graphics-cart-button {
   font-size: 1em;

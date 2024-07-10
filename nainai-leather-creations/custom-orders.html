@@ -1,26 +1,4 @@
 
-<!-- <section> == block elements -->
-
-<!-- for == id == # -->
-<!-- Using FOR instead of id: 
-it associates the label with the form control, enabling mouse, trackpad, 
-and touch device users to click on the label to activate the corresponding 
-control, and it also provides an accessible name for screen readers to read 
-out to their users. -->
-
-<!-- To define the default value of an <input> element you have to use the 
-value attribute like this: 
-<input type="text" value="by default this element is filled with this text" />
--->
-
-<!-- On the other hand, if you want to define a default value for a <textarea>, 
-you put it between the opening and closing tags of the <textarea> element, 
-like this: 
-<textarea>
-by default this element is filled with this text
-</textarea>
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,10 +30,10 @@ by default this element is filled with this text
                     <!-- Modal Content -->
                     <form class="modal-content animate" action="/action_page.php">
                         <div class="container">
-                            <label for="uname"><b>Username</b></label>
+                            <label id="uname"><b>Username</b></label>
                             <input type="text" placeholder="Enter Username" name="uname" required>
 
-                            <label for="psw"><b>Password</b></label>
+                            <label id="psw"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
 
                             <button type="submit" class="submit">Submit</button>
@@ -80,6 +58,7 @@ by default this element is filled with this text
                         </div>
                     </form>
                     </div>
+            </nav>
         </header>
         <main>
             <section class="page-title">
@@ -106,7 +85,8 @@ by default this element is filled with this text
               </div>
               <p>(Swipe for more images)</p>
 
-            <div class="feedback">
+              <div id="feedback">
+                <h2>Contact Us</h2>
                 <form action="/my-handling-form-page" 
                 method="post">
                     <ul>
@@ -122,7 +102,7 @@ by default this element is filled with this text
                             input. -->
                             <input type="text" id="name"
                             
-                name="user_name" />
+                name="user_name" >
                     <li> 
                     <label for="mail">Email:</label>
                     <!-- On the <input> element, the most important attribute 
@@ -139,9 +119,9 @@ by default this element is filled with this text
                     <!-- The <input> tag is a void element, meaning that it doesn't 
                     need a closing tag -->
                     <input type="email" id="mail"
-                name="user_email"/>
+                name="user_email">
                     <li>
-                        <label for="msg">Description: </label>
+                        <label for="msg">Order Description: </label>
                         <!--  <textarea> is not a void element, meaning it should be 
                         closed with the proper ending tag. This has an impact on 
                         a specific feature of forms: the way you define the 
@@ -154,8 +134,9 @@ by default this element is filled with this text
                     data to the web page defined by the action attribute of the <form>
                     element -->
                     <li class="button">
-                        <button type="submit" class="submit" >Submit</button>
-                    </li>
+                        <button type="submit">Submit: 
+                        </button>
+                    </ul>
                 </form>
             </div>
         </main>
@@ -163,10 +144,10 @@ by default this element is filled with this text
             <div class="social">
                 <a href="https://www.instagram.com/nainaiphotoandleather/?igsh=cGdkMXZtMGlsaTh6" target="_blank">
                     <img src="images/instagram.png" alt="instagram icon">
+                </a>
             </div>
             <p><a href=site-plan.html>Site Plan</a></p>
             <p>NaiNai Leather & Creations &copy; 2024 - Chelsea Saunders</p>
-                </a>
         </footer>
     </div>
         <script>
@@ -189,3 +170,27 @@ by default this element is filled with this text
     </body>
 </html>
 
+
+
+
+<!-- <section> == block elements -->
+
+<!-- for == id == # -->
+<!-- Using FOR instead of id: 
+it associates the label with the form control, enabling mouse, trackpad, 
+and touch device users to click on the label to activate the corresponding 
+control, and it also provides an accessible name for screen readers to read 
+out to their users. -->
+
+<!-- To define the default value of an <input> element you have to use the 
+value attribute like this: 
+<input type="text" value="by default this element is filled with this text" />
+-->
+
+<!-- On the other hand, if you want to define a default value for a <textarea>, 
+you put it between the opening and closing tags of the <textarea> element, 
+like this: 
+<textarea>
+by default this element is filled with this text
+</textarea>
+-->
