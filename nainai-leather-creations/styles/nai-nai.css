@@ -81,7 +81,7 @@ button {
     box-shadow: 10px 10px 10px #6f7364;
     border: 1px solid white;
     background-color: #92A6A6;
-    justify-content: space-around;
+    justify-self: space-around;
     font-size: 1em;
 }
 button:hover {
